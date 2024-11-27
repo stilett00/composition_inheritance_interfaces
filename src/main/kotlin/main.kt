@@ -4,6 +4,6 @@ fun main(){
 
     WallService.printPostsText()
 
-    WallService.update(Post(22, 1900000000, "My edited post", id = 1))
+    WallService.update(Post(22, 1900090000, "My edited post", id = 1))
     WallService.printPostsText()
 }
