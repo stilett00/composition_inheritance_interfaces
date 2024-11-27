@@ -9,7 +9,7 @@ object WallService {
     }
 
     fun printPostsText() {
-        posts.forEach { println("${it.id} ${it.text}") }
+        posts.forEach { println("${it.id} ${it.text ?: "No text"}") }
     }
 
     fun update(post: Post): Boolean {

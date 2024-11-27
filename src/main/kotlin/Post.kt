@@ -1,7 +1,7 @@
 data class Post(
     val authorId: Int,
     val date: Int,
-    val text: String,
+    val text: String? = null,
     val id: Int = 0,
     val friendsOnly: Boolean = false,
     val likes: Int = 0,
