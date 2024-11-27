@@ -15,7 +15,7 @@ object WallService {
     fun update(post: Post): Boolean {
         for ((index, existingPost) in posts.withIndex()) {
             if (existingPost.id == post.id) {
-                posts[index] = post.copy(reposts = post.reposts.copy())
+                posts[index] = post.copy(reposts = post.reposts?.copy())
                 return true
             }
         }
