@@ -6,6 +6,7 @@ data class Post(
     val friendsOnly: Boolean = false,
     val likes: Int = 0,
     val reposts: Reposts? = null,
-    val views: Int = 0
+    val views: Int = 0,
+    val attachments: Array<Attachment> = emptyArray()
 ) {
 }
