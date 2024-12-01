@@ -5,7 +5,7 @@ data class Post(
     val id: Int = 0,
     val friendsOnly: Boolean = false,
     val likes: Int = 0,
-    val reposts: Reposts = Reposts(),
+    val reposts: Reposts? = null,
     val views: Int = 0
 ) {
 }
